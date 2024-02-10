@@ -1,0 +1,1459 @@
+body
+    font-family: 'Titillium Web', sans-serif
+    margin: 0
+    .container
+        max-width: 1920px
+    p
+        margin: 0
+    header
+        #superTopo
+            display: flex
+            justify-content: center
+            width: 100%
+            height: 24px
+            background-color: #353535
+            text-align: center
+            align-items: center
+            p
+                font-family: Titillium Web
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                letter-spacing: 0px
+                text-align: center
+                color: #fff
+                margin: 0
+        #headerMobile
+            display: none
+        #mainHeader
+            .container
+                display: flex
+                justify-content: center
+                width: 100%
+                height: 88px
+                background-color: #fff
+                text-align: center
+                align-items: center
+                box-shadow: 0px 4px 6px 0px #00000014
+                #infosHeader
+                    display: flex
+                    width: 100%
+                    max-width: 1320px
+                    justify-content: space-between
+                    align-items: center
+                    .navbar-mobile
+                        display: none
+                    #logo
+                        width: 20%
+                        display: flex
+                        justify-content: center
+                    #busca
+                        display: flex
+                        justify-content: flex-end
+                        width: 40%
+                        max-width: 791px
+                        max-height: 88px
+                        text-align: center
+                        align-items: center
+                        input
+                            background-color: #EFEFEF
+                            border-radius: 10px
+                            height: 40px
+                            border: none
+                            width: 791px
+                            font-family: Titillium Web
+                            font-size: 12px
+                            font-weight: 400
+                            line-height: 18px
+                            letter-spacing: 0px
+                            text-align: left
+                            padding-left: 20px
+                            &:focus
+                                box-shadow: 0 0 0 0
+                                border: 0 none
+                                outline: 0
+                        button
+                            position: absolute
+                            background-color: #FAA500
+                            border-radius: 8px
+                            height: 40px
+                            border: none
+                            width: 119px
+                            cursor: pointer
+                            color: #fff
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: center
+                    #painelConta
+                        display: flex
+                        justify-content: space-between
+                        width: 40%
+                        max-width: 422px
+                        height: 88px
+                        text-align: center
+                        align-items: center
+                        .minhaConta, .favoritos, .carrinho
+                            display: flex
+                            align-items: center
+                            gap: 8px
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: left      
+                            cursor: pointer
+                            text-decoration: none
+                            color: #353535
+                            img
+                                max-height: 14px
+                            &:hover
+                                color: #FAA500
+                        .carrinho
+                            border-radius: 8px
+                            border: 1px solid #FAA500
+                            padding: 12px 14px 13px 17px
+        .navbar
+            height: 48px
+            display: flex
+            justify-content: center
+            ul
+                list-style: none
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0
+                li
+                    width: 146px
+                    text-align: center
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    a
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0px
+                        text-align: center
+                        color: #353535
+                        text-decoration: none
+                        &.novidades
+                            display: flex
+                            align-items: center
+                            gap: 8px
+                        &.outlet
+                            text-transform: uppercase
+                        &.active
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 700
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: center
+                            color: #FAA500
+                        &:hover
+                            color: #FAA500
+    #carouselCaptions
+        .carousel-indicators
+            [data-bs-target]
+                width: 16px
+                height: 16px
+                border-radius: 50%
+                background-color: transparent
+                border: 1px solid #FAA500!important
+                &.active
+                    background-color: #FAA500
+        .carousel-item
+            height: 600px
+            .bannerMobile
+                display: none
+            .bannerDesktop
+                display: block
+                width: 100%
+            .carousel-caption
+                display: flex!important
+                flex-direction: column
+                justify-content: center
+                height: 600px
+                gap: 30px
+                h1
+                    font-family: Montserrat
+                    font-size: 40px
+                    font-weight: 700
+                    line-height: 49px
+                    letter-spacing: 0em
+                    text-align: left
+                p
+                    font-family: Montserrat
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 24px
+                    letter-spacing: 0em
+                    text-align: left
+                    width: 460px
+                a
+                    &.btn
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 128px
+                        height: 48px
+                        padding: 14px 30px 14px 30px
+                        border-radius: 10px
+                        color: #fff
+                        background-color: #FAA500!important
+                        font-family: Montserrat
+                        font-size: 16px
+                        font-weight: 700
+                        line-height: 20px
+                        letter-spacing: 0em
+                        text-align: left
+        .carousel-control-prev-icon
+            background-image: url("../svg/prev.svg")
+        .carousel-control-next-icon
+           background-image: url("../svg/next.svg")
+    #servicos
+        display: flex
+        justify-content: center
+        flex-direction: column
+        margin: 20px 0
+        align-items: center
+        h2
+            font-family: Titillium Web
+            font-size: 16px
+            font-weight: 700
+            line-height: 24px
+            letter-spacing: 0em
+            text-align: center
+            margin-bottom: 20px
+            color: #353535
+        .row
+            justify-content: space-between
+            max-width: 1320px
+            width: 100%
+            .col-lg-2
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                flex-wrap: nowrap
+                width: 260px
+                height: 64px
+                border-radius: 4px
+                background: #EFEFEF
+                gap: 15px
+                .titulo
+                    font-family: Titillium Web
+                    font-size: 14px
+                    font-weight: 700
+                    line-height: 21px
+                    letter-spacing: 0em
+                    text-align: left
+                    color: #000
+                .texto
+                    font-family: Titillium Web
+                    font-size: 11px
+                    font-weight: 400
+                    line-height: 18px
+                    letter-spacing: 0em
+                    text-align: left
+                    color: #000
+    #parceiras
+        display: flex
+        justify-content: center
+        flex-direction: column
+        margin: 20px 0 50px
+        align-items: center
+        h2
+            font-family: Titillium Web
+            font-size: 32px
+            font-weight: 700
+            line-height: 49px
+            letter-spacing: 0em
+            text-align: center
+            color: #353535
+        .row
+            justify-content: space-between
+            align-items: center
+            gap: 25px
+            .col-lg-2
+                padding: 0
+                img
+                    width: 100%
+    #vitrine
+        display: flex
+        justify-content: center
+        flex-direction: column
+        margin: 20px 0 50px
+        align-items: center
+        .vitrine
+            &.container
+                max-width: 1320px
+            .vitrineHeader
+                .vitrineTitle
+                    font-family: Titillium Web
+                    font-size: 32px
+                    font-weight: 700
+                    line-height: 49px
+                    letter-spacing: 0em
+                    text-align: center
+                    color: #353535
+            .vitrineContent
+                .listaProdutos
+                    display: flex
+                    flex-direction: row
+                    align-items: flex-start
+                    justify-content: center
+                    list-style: none
+                    .slick-arrow
+                        position: absolute
+                        top: 50%
+                        width: auto
+                        height: 32px
+                        font-size: 0
+                        border: none
+                        background-repeat: no-repeat
+                        background-color: transparent
+                        &.slick-next
+                            right: 0
+                            background-image: url("../svg/next.svg")
+                        &.slick-prev
+                            left: 0
+                            background-image: url("../svg/prev.svg")
+                    .slick-list
+                        padding: 0!important
+                    .slick-track
+                        display: flex
+                        gap: 10px
+                        max-height: 600px
+                    .produto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        max-height: 100%
+                        width: 100%!important
+                        max-width: 308px
+                        .foto
+                            img
+                                height: auto
+                                width: 100%
+                                max-height: 381px
+                                max-width: 308px
+                            .variacoes
+                                margin: 10px 15px
+                                .opcoes
+                                    list-style: none
+                                    padding: 0
+                                    display: flex
+                                    justify-content: flex-start
+                                    gap: 8px
+                                    .cores
+                                        width: 27px
+                                        height: 27px
+                                        border-radius: 4px
+                                        border: 1px
+                                        cursor: pointer
+                                        &.bege
+                                            background: #DEAC71
+                                        &.rose
+                                            background: #D37164
+                                        &.azul
+                                            background: #6497D3
+                                        &.violeta
+                                            background: #3C3B79
+                                        &.preto
+                                            background: #1C1A19
+                                        &.rose-escuro
+                                            background: #D84E4B
+                                        &.bege-claro
+                                            background: #CFC9B0
+                                        &.branco
+                                            background: #EAE9E5
+                                        a
+                                            font-size: 0
+                                        &.active
+                                            border: 2px solid #353535
+                        .produtoDescricao
+                            margin: 0px 15px 10px    
+                            height: 135px
+                            .preco
+                                font-family: Titillium Web
+                                font-size: 20px
+                                font-weight: 700
+                                line-height: 30px
+                                letter-spacing: 0em
+                                text-align: left
+                                color: #353535
+                            .nome
+                                h3
+                                    font-family: Titillium Web
+                                    font-size: 16px
+                                    font-weight: 400
+                                    line-height: 24px
+                                    letter-spacing: 0em
+                                    text-align: left
+                                    a
+                                        font-family: Titillium Web
+                                        font-size: 16px
+                                        font-weight: 400
+                                        line-height: 24px
+                                        letter-spacing: 0em
+                                        text-align: left
+                            .descricao
+                                p
+                                    font-family: Titillium Web
+                                    font-size: 12px
+                                    font-weight: 400
+                                    line-height: 18px
+                                    letter-spacing: 0em
+                                    text-align: left
+                        .btn
+                            display: flex
+                            width: 90%
+                            height: 35px
+                            border-radius: 4px
+                            background: #FAA500
+                            color: #fff
+                            align-items: center
+                            justify-content: center
+                            a
+                                font-family: Titillium Web
+                                font-size: 16px
+                                font-weight: 400
+                                line-height: 24px
+                                letter-spacing: 0em
+                                text-align: center
+                                color: #fff
+    #novaColecao
+        &.container
+            max-width: 1320px
+            .colecao
+                >.col-md
+                    display: flex
+                    align-items: flex-start
+                    flex-direction: column
+                    justify-content: center
+                    .titulo-colecao
+                        font-family: Titillium Web
+                        font-size: 24px
+                        font-weight: 700
+                        line-height: 37px
+                        letter-spacing: 0em
+                        text-align: left
+                    .texto-colecao
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0em
+                        text-align: left
+    #newsletter
+        display: flex
+        height: 120px
+        align-items: center
+        justify-content: center
+        &.container
+            max-width: 1320px
+            h2
+                font-family: Titillium Web
+                font-size: 24px
+                font-weight: 700
+                line-height: 37px
+                letter-spacing: 0em
+                text-align: left
+                width: 40%
+            .newsletterInternal
+                display: flex
+                justify-content: center
+                width: 75%
+                max-width: 1320px
+                max-height: 88px
+                text-align: center
+                align-items: center
+                .input-group
+                    position: relative
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: stretch
+                    width: 60%
+                    .form-control
+                        background-color: #fff
+                        border-radius: 10px 0 0px 10px
+                        height: 40px
+                        border: 1px solid #353535
+                        max-width: 660px
+                        font-family: Titillium Web
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 18px
+                        letter-spacing: 0px
+                        text-align: left
+                        padding-left: 20px
+                        position: relative
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: stretch
+                        width: 50%
+                        &:focus
+                            box-shadow: 0 0 0 0
+                            // border: 0 none
+                            outline: 0
+                    button
+                        background-color: #FAA500
+                        border-radius: 8px
+                        height: 40px
+                        border: none
+                        width: 131px
+                        cursor: pointer
+                        color: #fff
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0px
+                        text-align: center
+                        z-index: 8
+                        right: 10px
+    #overlay 
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.698)
+        display: none
+        z-index: 8
+        &.active
+            display: block !important
+    #popup 
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 0px
+        border-radius: 0
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        display: none
+        z-index: 9
+        text-align: center
+        color: #787D83
+        &.active
+            display: flex !important
+            .popupAside
+                background-color: #fff
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                padding: 0 20px
+                gap: 10px
+                h2 
+                    margin-top: 0
+                    text-transform: uppercase
+                    font-family: Titillium Web
+                    font-size: 12px
+                    font-weight: 400
+                    line-height: 20px
+                    letter-spacing: 0px
+                    text-align: center
+                p
+                    font-family: Lato
+                    font-size: 20px
+                    font-weight: 400
+                    line-height: 23px
+                    letter-spacing: 0px
+                    text-align: center
+                    b
+                        font-family: Lato
+                        font-size: 20px
+                        font-weight: 700
+                        line-height: 23px
+                        letter-spacing: 0px
+                        text-align: center
+                .input-group
+                    position: relative
+                    display: flex
+                    flex-wrap: nowrap
+                    align-items: center
+                    width: 100%
+                    justify-content: center
+                    flex-direction: column
+                    gap: 10px
+                    margin-top: 10px
+                    .form-control
+                        background-color: #fff
+                        border-radius: 10px
+                        height: 40px
+                        border: 1px solid #C4C4C4
+                        font-family: Titillium Web
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 18px
+                        letter-spacing: 0px
+                        text-align: left
+                        padding-left: 20px
+                        width: 322px
+                        &:focus
+                            box-shadow: 0 0 0 0
+                            // border: 0 none
+                            outline: 0
+                    button
+                        background-color: #FAA500
+                        border-radius: 8px
+                        height: 40px
+                        border: none
+                        width: 100%
+                        cursor: pointer
+                        color: #fff
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0px
+                        text-align: center
+                        display: flex
+                        gap: 8px
+                        align-items: center
+                        justify-content: center    
+    #closePopup 
+        position: absolute
+        top: -25px
+        right: 0
+        font-family: Lato
+        font-size: 12px
+        line-height: 20px
+        letter-spacing: 0px
+        text-align: left
+        background: transparent
+        border: none
+        color: #fff
+        text-transform: uppercase
+    footer
+        position: relative
+        bottom: 0
+        width: 100%
+        box-shadow: 0px -5px 6px 0px rgba(0, 0, 0, 0.0784313725)
+        .container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            padding: 0
+            .footerTop
+                height: 291px
+                display: flex    
+                align-items: center
+                max-width: 1320px
+                width: 100%
+                .info ,.account ,.findUs
+                    &.col-3
+                        height: 187px
+                p
+                    font-family: Titillium Web
+                    font-size: 16px
+                    font-weight: 700
+                    line-height: 18px
+                    letter-spacing: 0px
+                    text-align: left
+                    margin-bottom: 20px
+                ul
+                    list-style: none
+                    padding: 0    
+                    display: flex
+                    flex-direction: column
+                    gap: 20px
+                    li
+                        a
+                            font-family: Titillium Web
+                            font-size: 12px
+                            font-weight: 400
+                            line-height: 18px
+                            letter-spacing: 0px
+                            text-align: left
+                            color: #000
+                            cursor: pointer
+                            text-decoration: none
+                            &:hover
+                                color: #FAA500
+            .footerBottom
+                height: 85px
+                background-color: #353535
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                .internal
+                    max-width: 1320px    
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    .redesSociais
+                        display: flex
+                        align-items: center
+                        gap: 20px
+                        img
+                            height: 32px
+                        .youtubeFooter
+                            img
+                                height: 22px
+                    .meiosPagamento
+                        display: flex
+                        align-items: center
+                        gap: 20px
+                    .desenvolvidoPor
+                        display: flex
+                        align-items: flex-start
+                        justify-content: space-between
+                        width: 207px
+                        p
+                            font-family: Open Sans
+                            font-size: 10px
+                            font-weight: 400
+                            line-height: 14px
+                            letter-spacing: 0px
+                            text-align: left
+                            color: #fff
+                        img
+                            height: 25px
+@media only screen and (max-width: 768px)
+    body
+        // overflow: hidden auto
+        header
+            #superTopo
+                display: flex
+                justify-content: center
+                width: 100%
+                height: 24px
+                background-color: #353535
+                text-align: center
+                align-items: center
+                p
+                    font-family: Titillium Web
+                    font-size: 10px
+                    font-weight: 400
+                    line-height: 18px
+                    letter-spacing: 0px
+                    text-align: center
+            #headerMobile
+                display: flex
+                height: 88px
+                box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0784313725)
+                align-items: center
+                justify-content: space-between
+                .navbar
+                    display: block
+                    width: max-content
+                    background-color: transparent!important
+                    .container-fluid
+                        padding: 0
+                        button
+                            border: none
+                .buscar, #painel
+                    width: 54px
+                    display: flex
+                    justify-content: center
+                .buscar
+                    #buscaMobile
+                        width: 100%
+                        position: absolute
+                        top: 110px
+                        background-color: #fff
+                        left: 0
+                        z-index: 9
+                        input
+                            background-color: #EFEFEF
+                            border-radius: 10px
+                            height: 40px
+                            border: none
+                            width: 80%
+                            font-family: Titillium Web
+                            font-size: 12px
+                            font-weight: 400
+                            line-height: 18px
+                            letter-spacing: 0px
+                            text-align: left
+                            padding-left: 20px
+                            &:focus
+                                box-shadow: 0 0 0 0
+                                border: 0 none
+                                outline: 0
+                        button
+                            position: absolute
+                            background-color: #FAA500
+                            border-radius: 8px
+                            height: 40px
+                            border: none
+                            width: 20%
+                            cursor: pointer
+                            color: #fff
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: center
+            #mainHeader
+                display: none
+                .container
+                    display: flex
+                    justify-content: center
+                    width: 100%
+                    height: 88px
+                    background-color: #fff
+                    text-align: center
+                    align-items: center
+                    box-shadow: 0px 4px 6px 0px #00000014
+                    #infosHeader
+                        display: flex
+                        width: 100%
+                        max-width: 1320px
+                        justify-content: space-between
+                        align-items: center
+                        .navbar-mobile
+                            display: block
+                        #logo
+                            width: 20%
+                            display: flex
+                            justify-content: center
+                        #busca
+                            justify-content: flex-end
+                            width: 40%
+                            max-width: 791px
+                            max-height: 88px
+                            text-align: center
+                            align-items: center
+                            display: none
+                            input
+                                background-color: #EFEFEF
+                                border-radius: 10px
+                                height: 40px
+                                border: none
+                                width: 791px
+                                font-family: Titillium Web
+                                font-size: 12px
+                                font-weight: 400
+                                line-height: 18px
+                                letter-spacing: 0px
+                                text-align: left
+                                padding-left: 20px
+                                &:focus
+                                    box-shadow: 0 0 0 0
+                                    border: 0 none
+                                    outline: 0
+                            button
+                                position: absolute
+                                background-color: #FAA500
+                                border-radius: 8px
+                                height: 40px
+                                border: none
+                                width: 119px
+                                cursor: pointer
+                                color: #fff
+                                font-family: Titillium Web
+                                font-size: 14px
+                                font-weight: 400
+                                line-height: 21px
+                                letter-spacing: 0px
+                                text-align: center
+                        #painelConta
+                            display: flex
+                            justify-content: space-between
+                            width: 40%
+                            max-width: 422px
+                            height: 88px
+                            text-align: center
+                            align-items: center
+                            .minhaConta, .favoritos, .carrinho
+                                display: flex
+                                align-items: center
+                                gap: 8px
+                                font-family: Titillium Web
+                                font-size: 14px
+                                font-weight: 400
+                                line-height: 21px
+                                letter-spacing: 0px
+                                text-align: left      
+                                cursor: pointer
+                                text-decoration: none
+                                color: #353535
+                                img
+                                    max-height: 14px
+                                &:hover
+                                    color: #FAA500
+                            .carrinho
+                                border-radius: 8px
+                                border: 1px solid #FAA500
+                                padding: 12px 14px 13px 17px
+            .navbar
+                height: 48px
+                display: none
+                justify-content: center
+                ul
+                    list-style: none
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    margin: 0
+                    li
+                        width: 146px
+                        text-align: center
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        a
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: center
+                            color: #353535
+                            text-decoration: none
+                            &.novidades
+                                display: flex
+                                align-items: center
+                                gap: 8px
+                            &.outlet
+                                text-transform: uppercase
+                            &.active
+                                font-family: Titillium Web
+                                font-size: 14px
+                                font-weight: 700
+                                line-height: 21px
+                                letter-spacing: 0px
+                                text-align: center
+                                color: #FAA500
+                            &:hover
+                                color: #FAA500
+        #carouselCaptions
+            .carousel-item
+                height: 320px
+                .bannerDesktop
+                    display: none!important
+                .bannerMobile
+                    display: block!important
+                    width: 100%
+                .carousel-caption
+                    height: 320px
+                    h1
+                        font-family: Montserrat
+                        font-size: 30px
+                        font-weight: 700
+                        line-height: 36.57px
+                        letter-spacing: 0em
+                        text-align: left
+                        width: 220px
+                    p
+                        font-family: Montserrat
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 17.07px
+                        letter-spacing: 0em
+                        text-align: left
+                        width: 239px
+                    a
+                        &.btn
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            width: 76px
+                            height: 28px
+                            border-radius: 4px
+                            color: #fff
+                            background-color: #FAA500!important
+                            font-family: Montserrat
+                            font-size: 14px
+                            font-weight: 700
+                            line-height: 17.07px
+                            letter-spacing: 0em
+                            text-align: left  
+        #servicos
+            padding: 0 30px
+            h2
+                font-family: Titillium Web
+                font-size: 16px
+                font-weight: 700
+                line-height: 24px
+                letter-spacing: 0em
+                text-align: center
+                color: #353535
+            .row
+                .slick-list
+                    margin: 0 auto
+                    padding: 0!important
+                    max-width: 360px
+                    .slick-slide
+                        display: flex
+                        justify-content: center
+        #parceiras
+            padding: 0 30px
+            h2
+                font-family: Titillium Web
+                font-size: 24px
+                font-weight: 700
+                line-height: 37px
+                letter-spacing: 0em
+                text-align: center
+                color: #353535
+            .row
+                .slick-list
+                    margin: 0 auto
+                    padding: 0!important
+                    max-width: 360px
+                    .slick-slide
+                        display: flex
+                        justify-content: center
+                    img
+                        width: 90%
+                        max-height: 64px
+                        box-shadow: 0px 4px 4px 0px #00000021
+        #vitrine
+            display: flex
+            justify-content: center
+            flex-direction: column
+            margin: 20px 0 50px
+            align-items: center
+            h2
+                font-family: Titillium Web
+                font-size: 24px
+                font-weight: 700
+                line-height: 37px
+                letter-spacing: 0em
+                text-align: center
+            .vitrine
+                .vitrineHeader
+                    .vitrineTitle
+                        font-family: Titillium Web
+                        font-size: 32px
+                        font-weight: 700
+                        line-height: 49px
+                        letter-spacing: 0em
+                        text-align: center
+                        color: #353535
+                .vitrineContent
+                    .listaProdutos
+                        display: flex
+                        flex-direction: row
+                        align-items: flex-start
+                        justify-content: center
+                        list-style: none
+                        padding: 0!important
+                        .slick-list
+                            padding: 0!important
+                        .slick-track
+                            display: flex
+                            max-height: 100%
+                            justify-content: center
+                        .produto
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            max-height: 100%
+                            max-width: unset
+                            width: unset
+                            .foto
+                                img
+                                    height: 100%
+                                    width: 100%
+                                    max-height: max-content
+                                    max-width: max-content
+                                .variacoes
+                                    margin: 10px 30px
+                                    .opcoes
+                                        list-style: none
+                                        padding: 0
+                                        display: flex
+                                        justify-content: flex-start
+                                        gap: 8px
+                                        .cores
+                                            width: 27px
+                                            height: 27px
+                                            border-radius: 4px
+                                            border: 1px
+                                            cursor: pointer
+                                            &.bege
+                                                background: #DEAC71
+                                            &.rose
+                                                background: #D37164
+                                            &.azul
+                                                background: #6497D3
+                                            &.violeta
+                                                background: #3C3B79
+                                            &.preto
+                                                background: #1C1A19
+                                            &.rose-escuro
+                                                background: #D84E4B
+                                            &.bege-claro
+                                                background: #CFC9B0
+                                            &.branco
+                                                background: #EAE9E5
+                                            a
+                                                font-size: 0
+                                            &.active
+                                                border: 2px solid #353535
+                            .produtoDescricao
+                                margin: 0px 30px
+                                height: 135px
+                                .preco
+                                    font-family: Titillium Web
+                                    font-size: 20px
+                                    font-weight: 700
+                                    line-height: 30px
+                                    letter-spacing: 0em
+                                    text-align: left
+                                    color: #353535
+                                .nome
+                                    h3
+                                        font-family: Titillium Web
+                                        font-size: 16px
+                                        font-weight: 400
+                                        line-height: 24px
+                                        letter-spacing: 0em
+                                        text-align: left
+                                        a
+                                            font-family: Titillium Web
+                                            font-size: 16px
+                                            font-weight: 400
+                                            line-height: 24px
+                                            letter-spacing: 0em
+                                            text-align: left
+                                .descricao
+                                    p
+                                        font-family: Titillium Web
+                                        font-size: 12px
+                                        font-weight: 400
+                                        line-height: 18px
+                                        letter-spacing: 0em
+                                        text-align: left
+                                        width: 100%
+                            .btn
+                                display: flex
+                                width: 83%
+                                height: 35px
+                                margin: auto
+                                border-radius: 4px
+                                background: #FAA500
+                                color: #fff
+                                align-items: center
+                                justify-content: center
+                                a
+                                    font-family: Titillium Web
+                                    font-size: 16px
+                                    font-weight: 400
+                                    line-height: 24px
+                                    letter-spacing: 0em
+                                    text-align: center
+                                    color: #fff
+        #novaColecao
+            margin-bottom: 50px
+            padding: 0 30px
+            .colecao
+                gap: 30px
+                >.col-md
+                    display: flex
+                    align-items: flex-start
+                    flex-direction: column
+                    justify-content: center
+                    .titulo-colecao
+                        font-family: Titillium Web
+                        font-size: 24px
+                        font-weight: 700
+                        line-height: 37px
+                        letter-spacing: 0em
+                        text-align: left
+                    .texto-colecao
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0em
+                        text-align: left
+                .col-md
+                    img
+                        width: 100%
+        #newsletter
+            display: flex
+            height: 120px
+            align-items: center
+            justify-content: center
+            background-color: #FAFAFA
+            box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.0784313725)
+            max-width: unset!important
+            padding: 0 30px
+            .newsletterInternal
+                display: flex
+                flex-direction: column
+                justify-content: center
+                width: 100%!important
+                max-width: unset!important
+                max-height: unset!important
+                text-align: center
+                align-items: center
+                h2
+                    font-family: Titillium Web
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 37px
+                    letter-spacing: 0em
+                    text-align: center
+                    width: 100%
+                .input-group
+                    position: relative
+                    display: flex
+                    align-items: center
+                    width: 100%!important
+                    flex-direction: row
+                    align-content: center
+                    justify-content: center
+                    gap: 15px
+                    margin-bottom: 10px
+                    .form-control
+                        background-color: #fff
+                        border-radius: 10px!important
+                        height: 26px
+                        border: 1px solid #353535
+                        max-width: unset
+                        font-family: Titillium Web
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 18px
+                        letter-spacing: 0px
+                        text-align: left
+                        padding-left: 20px
+                        position: relative
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: stretch
+                        width: 60%!important
+                        &:focus
+                            box-shadow: 0 0 0 0
+                            // border: 0 none
+                            outline: 0
+                    button
+                        background-color: #FAA500
+                        border-radius: 10px!important
+                        height: 26px
+                        border: none
+                        width: 20%!important
+                        cursor: pointer
+                        color: #fff
+                        font-family: Titillium Web
+                        font-size: 14px
+                        font-weight: 400
+                        line-height: 21px
+                        letter-spacing: 0px
+                        text-align: center
+                        right: unset!important
+        #popup 
+            position: fixed
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            padding: 0px
+            border-radius: 0
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+            display: none
+            z-index: 9
+            text-align: center
+            color: #787D83
+            &.active
+                display: flex !important
+                .popupAside
+                    height: 307px!important
+                    width: 100%
+                    max-width: 298px!important
+                    h2 
+                        margin-top: 0
+                        text-transform: uppercase
+                        font-family: Titillium Web
+                        font-size: 12px
+                        font-weight: 400
+                        line-height: 20px
+                        letter-spacing: 0px
+                        text-align: center
+                    p
+                        font-family: Lato
+                        font-size: 20px
+                        font-weight: 400
+                        line-height: 23px
+                        letter-spacing: 0px
+                        text-align: center
+                        b
+                            font-family: Lato
+                            font-size: 20px
+                            font-weight: 700
+                            line-height: 23px
+                            letter-spacing: 0px
+                            text-align: center
+                    .input-group
+                        position: relative
+                        display: flex
+                        flex-wrap: nowrap
+                        align-items: center
+                        width: 238px
+                        justify-content: center
+                        flex-direction: column
+                        gap: 10px
+                        margin-top: 10px
+                        .form-control
+                            background-color: #fff
+                            border-radius: 10px
+                            height: 40px
+                            border: 1px solid #C4C4C4
+                            font-family: Titillium Web
+                            font-size: 12px
+                            font-weight: 400
+                            line-height: 18px
+                            letter-spacing: 0px
+                            text-align: left
+                            padding-left: 20px
+                            width: 100%
+                            &:focus
+                                box-shadow: 0 0 0 0
+                                // border: 0 none
+                                outline: 0
+                        button
+                            background-color: #FAA500
+                            border-radius: 8px
+                            height: 40px
+                            border: none
+                            width: 100%
+                            cursor: pointer
+                            color: #fff
+                            font-family: Titillium Web
+                            font-size: 14px
+                            font-weight: 400
+                            line-height: 21px
+                            letter-spacing: 0px
+                            text-align: center
+                            display: flex
+                            gap: 8px
+                            align-items: center
+                            justify-content: center
+                .popupImagem 
+                    display: none!important
+        footer
+            position: relative
+            bottom: 0
+            width: 100%
+            box-shadow: 0px -5px 6px 0px rgba(0, 0, 0, 0.0784313725)
+            .container
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                padding: 0
+                .footerTop
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    max-width: unset !important
+                    width: 100%
+                    flex-wrap: nowrap
+                    gap: 20px
+                    margin: 30px auto
+                    padding: 0 30px
+                    .info ,.account ,.findUs
+                        &.col-3
+                            height: auto!important
+                            width: 100%
+                            display: flex
+                            align-items: flex-start
+                            flex-direction: column
+                            padding: 0
+                            ul
+                                margin: 0
+                                display: none
+                                width: 100%
+                                padding: 0
+                            p
+                                font-family: Titillium Web
+                                font-size: 16px
+                                font-weight: 700
+                                line-height: 18px
+                                letter-spacing: 0px
+                                text-align: left
+                                margin-bottom: 0
+                                height: 30px
+                                padding: 0
+                                &::after
+                                    content: "+"
+                                    font-size: 18px
+                                    font-weight: bold
+                                    position: absolute
+                                    right: 30px
+                        &.active
+                            p
+                                &::after
+                                    content: "-"
+                        ul
+                            list-style: none
+                            padding: 0    
+                            display: flex
+                            flex-direction: column
+                            gap: 20px
+                            li
+                                a
+                                    font-family: Titillium Web
+                                    font-size: 12px
+                                    font-weight: 400
+                                    line-height: 18px
+                                    letter-spacing: 0px
+                                    text-align: left
+                                    color: #000
+                                    cursor: pointer
+                                    text-decoration: none
+                                    &:hover
+                                        color: #FAA500
+                .footerBottom
+                    height: 233px
+                    background-color: #353535
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    width: 100%
+                    .internal
+                        max-width: unset!important
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        height: 80%
+                        flex-direction: column
+                        .redesSociais
+                            display: flex
+                            align-items: center
+                            gap: 20px
+                            justify-content: center
+                            width: 298px
+                            img
+                                height: 32px
+                            .youtubeFooter
+                                img
+                                    height: 22px
+                        .meiosPagamento
+                            display: flex
+                            align-items: center
+                            gap: 20px
+                            justify-content: center
+                            width: 298px
+                        .desenvolvidoPor
+                            display: flex
+                            align-items: center
+                            gap: 20px
+                            justify-content: center
+                            width: 298px
+                            p
+                                font-family: Open Sans
+                                font-size: 10px
+                                font-weight: 400
+                                line-height: 14px
+                                letter-spacing: 0px
+                                text-align: left
+                                color: #fff
+                            img
+                                height: 25px

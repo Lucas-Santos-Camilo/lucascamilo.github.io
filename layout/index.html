@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maeztra - Teste Dev</title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="superTopo">
+            <p>Acompanhe as melhores promoções disponíveis aqui na Maeztra.</p>
+        </div>
+        <div id="headerMobile">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Vestidos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Roupas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sapatos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Lingerie</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Acessórios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Outlet</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <a href="#" id="logo">
+                <img src="img/b0652beb9756e9e0fe46f9f73c0e3c38.png">
+            </a>
+            <div class="buscar">
+                <img src="svg/lupa.svg">
+                <div id="buscaMobile" class="d-none">
+                    <input type="text" id="txtBuscaMobile" placeholder="O Que Você Busca?"/>
+                    <button id="btnBusca">Buscar</button>
+                </div>
+            </div>
+            <div id="painel">
+                <img src="svg/cartMobile.svg">
+            </div>
+        </div>
+        <div id="mainHeader">
+            <div class="container">
+                <div id="infosHeader">
+                    <a href="#" id="logo">
+                        <img src="img/b0652beb9756e9e0fe46f9f73c0e3c38.png">
+                    </a>
+                    <div id="busca">
+                        <input type="text" id="txtBusca" placeholder="O Que Você Busca?"/>
+                        <button id="btnBusca">Buscar</button>
+                    </div>
+                    <div id="painelConta">
+                        <a class="minhaConta">
+                            <img src="svg/user.svg">Minha Conta
+                        </a>
+                        <a class="favoritos">
+                            <img src="svg/heart.svg">Meus Favoritos
+                        </a>
+                        <a class="carrinho">
+                            <img src="svg/cart.svg">Meu Carrinho
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="nav-link novidades active" href="#"><img src="svg/vestido.svg">Novidades</a></li>
+                <li><a class="nav-link" href="#">Vestidos</a></li>
+                <li><a class="nav-link" href="#">Roupas</a></li>
+                <li><a class="nav-link" href="#">Sapatos</a></li>
+                <li><a class="nav-link" href="#">Lingerie</a></li>
+                <li><a class="nav-link" href="#">Acessórios</a></li>
+                <li><a class="nav-link outlet" href="#">Outlet</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="carouselCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bannerMobile" src="img/ftECh3G.jpg" class="w-100" alt="...">
+                <img class="bannerDesktop" src="img/5e093beef96796f5f41acf9580c9c580.jpg" class="w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1>Promoções de Outono</h1>
+                    <p>Confiras os melhores looks para combinar com você nesse Outono</p>
+                    <a class="btn btn-lg" href="#">Conferir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bannerMobile" src="img/ftECh3G.jpg" class="w-100" alt="...">
+                <img class="bannerDesktop" src="img/5e093beef96796f5f41acf9580c9c580.jpg" class="w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1>Promoções de Outono</h1>
+                    <p>Confiras os melhores looks para combinar com você nesse Outono</p>
+                    <a class="btn btn-lg" href="#">Conferir</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bannerMobile" src="img/ftECh3G.jpg" class="w-100" alt="...">
+                <img class="bannerDesktop" src="img/5e093beef96796f5f41acf9580c9c580.jpg" class="w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block text-start">
+                    <h1>Promoções de Outono</h1>
+                    <p>Confiras os melhores looks para combinar com você nesse Outono</p>
+                    <a class="btn btn-lg" href="#">Conferir</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="servicos" class="">
+        <h2>Por que comprar na Maeztra?</h2>
+        <div class="row">
+            <div class="col-lg-2">
+                <img src="svg/importados.svg">
+                <div>
+                    <p class="titulo">Produtos importados</p>
+                    <p class="texto">Produto de Alta Qualidade</p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <img src="svg/estoque.svg">
+                <div>
+                    <p class="titulo">Estoque no Brazil</p>
+                    <p class="texto">Produtos mais perto de você!</p>                    
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <img src="svg/trocas.svg">    
+                <div>
+                    <p class="titulo">Trocas Garantidas</p>
+                    <p class="texto">Trocas em até 48 horas, vejas as regras</p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <img src="svg/promo.svg">    
+                <div>
+                    <p class="titulo">Ganhe 5% off</p>
+                    <p class="texto">Pagando à vista no Cartão</p>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <img src="svg/frete.svg">    
+                <div>
+                    <p class="titulo">Frete Grátis</p>
+                    <p class="texto">Em compras acima de R$ 499,00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="parceiras" class="">
+        <h2>Marcas Parceiras</h2>
+        <div class="row">
+            <div class="col-lg-2 col-md-2">
+                <img src="img/comma.png">
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <img src="img/melissa.png">
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <img src="img/forever.png">
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <img src="img/zara.png">
+            </div>
+            <div class="col-lg-2 col-md-2">
+                <img src="img/ann-taylor.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="vitrine">
+        <div class="row vitrine container">
+            <div class="vitrineHeader col-lg-12">
+                <h2 class="vitrineTitle">As Mais Pedidas</h2>
+            </div>
+            <div class="col-lg-12 vitrineContent">
+                <ul class="listaProdutos row">
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/8a36de6cf9fff367e7503f34e205264c.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active bege" title="bege">
+                                        <a>Bege</a>
+                                    </li>
+                                    <li class="cores rose" title="rose">
+                                        <a>Rosé</a>
+                                    </li>
+                                    <li class="cores azul" title="azul">
+                                        <a>Azul</a>
+                                    </li>
+                                    <li class="cores violeta" title="violeta">
+                                        <a>Violeta</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 500,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Faux Suede Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A faux suede mini skirt featuring exposed button-front closures and panel seam construction.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/d0ba6e2b4d4829c677785d11f87ee3bd.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active preto" title="preto">
+                                        <a>Preto</a>
+                                    </li>
+                                    <li class="cores rose-escuro" title="rose-escuro">
+                                        <a>Rosé Escuro</a>
+                                    </li>
+                                    <li class="cores bege-claro" title="bege-claro">
+                                        <a>Bege Claro</a>
+                                    </li>
+                                    <li class="cores branco" title="branco">
+                                        <a>Branco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 320,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Ruched Rose Print Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/8a36de6cf9fff367e7503f34e205264c.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active bege" title="bege">
+                                        <a>Bege</a>
+                                    </li>
+                                    <li class="cores rose" title="rose">
+                                        <a>Rosé</a>
+                                    </li>
+                                    <li class="cores azul" title="azul">
+                                        <a>Azul</a>
+                                    </li>
+                                    <li class="cores violeta" title="violeta">
+                                        <a>Violeta</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 500,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Faux Suede Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A faux suede mini skirt featuring exposed button-front closures and panel seam construction.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/d0ba6e2b4d4829c677785d11f87ee3bd.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active preto" title="preto">
+                                        <a>Preto</a>
+                                    </li>
+                                    <li class="cores rose-escuro" title="rose-escuro">
+                                        <a>Rosé Escuro</a>
+                                    </li>
+                                    <li class="cores bege-claro" title="bege-claro">
+                                        <a>Bege Claro</a>
+                                    </li>
+                                    <li class="cores branco" title="branco">
+                                        <a>Branco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 320,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Ruched Rose Print Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/8a36de6cf9fff367e7503f34e205264c.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active bege" title="bege">
+                                        <a>Bege</a>
+                                    </li>
+                                    <li class="cores rose" title="rose">
+                                        <a>Rosé</a>
+                                    </li>
+                                    <li class="cores azul" title="azul">
+                                        <a>Azul</a>
+                                    </li>
+                                    <li class="cores violeta" title="violeta">
+                                        <a>Violeta</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 500,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Faux Suede Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A faux suede mini skirt featuring exposed button-front closures and panel seam construction.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                    <li class="produto">
+                        <div class="foto">
+                            <img src="img/produtos/d0ba6e2b4d4829c677785d11f87ee3bd.png">
+                            <div class="variacoes">
+                                <ul class="opcoes">
+                                    <li class="cores active preto" title="preto">
+                                        <a>Preto</a>
+                                    </li>
+                                    <li class="cores rose-escuro" title="rose-escuro">
+                                        <a>Rosé Escuro</a>
+                                    </li>
+                                    <li class="cores bege-claro" title="bege-claro">
+                                        <a>Bege Claro</a>
+                                    </li>
+                                    <li class="cores branco" title="branco">
+                                        <a>Branco</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="produtoDescricao">
+                            <div class="preco">
+                                <p>
+                                    R$ 320,00
+                                </p>
+                            </div>
+                            <div class="nome">
+                                <h3>
+                                    <a>Ruched Rose Print Mini Skirt</a>
+                                </h3>
+                            </div>
+                            <div class="descricao">
+                                <p>
+                                    A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.
+                                </p>
+                            </div>                            
+                        </div>
+                        <div class="btn">
+                            <a>Adicionar</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="novaColecao" class="container">
+        <div class="row colecao">
+            <div class="col-md">
+                <h2 class="titulo-colecao">Lorem ipsum </h2>
+                <p class="texto-colecao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque placerat consequat. Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar velit massa. Ut ornare augue eget convallis volutpat aliquet. Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.
+                </p>
+            </div>
+            <div class="col-md">
+                <img src="img/ab2866550c220d6482af49c618752c55.jpg">    
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="container">   
+        <div class="newsletterInternal">        
+            <h2>Receba Nossa Newsletter</h2>
+            <div class="input-group">
+                <input id="email" type="email" class="form-control" placeholder="Digite seu e-mail" name="email" aria-label="Digite seu e-mail" aria-describedby="button-addon2" autocomplete="off">
+                <button class="btn btn-outline-secondary" type="button" id=" button-addon2">Enviar</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="overlay"></div>    
+    <div id="popup">
+        <div class="popupImagem">
+            <img src="img/bg-newsletter.jpg">
+        </div>
+        <div class="popupAside">
+            <img src="svg/newsletter-mail-icon.svg">
+            <h2>Bem Vindo à MAEZTRA</h2>
+            <p>
+                Receba em Primeira mão
+                <br>
+                <b>desconto e ofertas exclusivas</b>
+            </p>
+            <div class="input-group">
+                <input id="emailPopup" type="email" class="form-control" placeholder="Digite seu e-mail" name="email" aria-label="Digite seu e-mail" aria-describedby="button-addon2" autocomplete="off">
+                <button class="btn" type="button">Enviar<img src="svg/enviar.svg"></button>
+            </div>
+            <button id="closePopup">Fechar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row footerTop justify-content-center">
+                <div class="col-3 info">
+                    <p>Informações</p>
+                    <ul>
+                        <li><a href="#">Quem Somos</a></li>
+                        <li><a href="#">Prazo de Envio</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Promoções e Cupons</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 account">
+                    <p>Minha Conta</p>
+                    <ul>
+                        <li><a href="#">Minha Conta</a></li>
+                        <li><a href="#">Meus Pedidos</a></li>
+                        <li><a href="#">Cadastre-se</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 findUs">
+                    <p>Onde nos Encontrar</p>
+                    <ul>
+                        <li><a href="#">Lojas</a></li>
+                        <li><a href="#">Endereço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footerBottom">
+                <div class="internal">
+                    <div class="redesSociais col-3">
+                        <a href="#" class="facebookFooter"><img src="svg/facebook.svg"></a>
+                        <a href="#" class="linkedinFooter"><img src="svg/linkedin.svg"></a>
+                        <a href="#" class="instagramFooter"><img src="svg/instagram.svg"></a>
+                        <a href="#" class="youtubeFooter"><img src="svg/youtube.svg"></a>
+                    </div>
+                    <div class="meiosPagamento col-3">
+                        <img src="svg/visa.svg">
+                        <img src="svg/mastercard.svg">
+                        <img src="svg/visa.svg">
+                        <img src="svg/mastercard.svg">
+                    </div>
+                    <div class="desenvolvidoPor col-3">
+                        <div>
+                            <p>Developed by</p>
+                            <img src="svg/logovtex.svg">
+                        </div>
+                        <div>
+                            <p>Powered by</p>
+                            <a href="https://maeztra.com"><img src="svg/logo-maeztra.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+</body>
+</html>

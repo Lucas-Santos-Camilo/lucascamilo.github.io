@@ -1,0 +1,1667 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+}
+body .container {
+  max-width: 1920px;
+}
+body p {
+  margin: 0;
+}
+body header #superTopo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 24px;
+  background-color: #353535;
+  text-align: center;
+  align-items: center;
+}
+body header #superTopo p {
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+body header #headerMobile {
+  display: none;
+}
+body header #mainHeader .container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0784313725);
+}
+body header #mainHeader .container #infosHeader {
+  display: flex;
+  width: 100%;
+  max-width: 1320px;
+  justify-content: space-between;
+  align-items: center;
+}
+body header #mainHeader .container #infosHeader .navbar-mobile {
+  display: none;
+}
+body header #mainHeader .container #infosHeader #logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+body header #mainHeader .container #infosHeader #busca {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  max-width: 791px;
+  max-height: 88px;
+  text-align: center;
+  align-items: center;
+}
+body header #mainHeader .container #infosHeader #busca input {
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  width: 791px;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 20px;
+}
+body header #mainHeader .container #infosHeader #busca input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+body header #mainHeader .container #infosHeader #busca button {
+  position: absolute;
+  background-color: #FAA500;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  width: 119px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+body header #mainHeader .container #infosHeader #painelConta {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  max-width: 422px;
+  height: 88px;
+  text-align: center;
+  align-items: center;
+}
+body header #mainHeader .container #infosHeader #painelConta .minhaConta, body header #mainHeader .container #infosHeader #painelConta .favoritos, body header #mainHeader .container #infosHeader #painelConta .carrinho {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+  cursor: pointer;
+  text-decoration: none;
+  color: #353535;
+}
+body header #mainHeader .container #infosHeader #painelConta .minhaConta img, body header #mainHeader .container #infosHeader #painelConta .favoritos img, body header #mainHeader .container #infosHeader #painelConta .carrinho img {
+  max-height: 14px;
+}
+body header #mainHeader .container #infosHeader #painelConta .minhaConta:hover, body header #mainHeader .container #infosHeader #painelConta .favoritos:hover, body header #mainHeader .container #infosHeader #painelConta .carrinho:hover {
+  color: #FAA500;
+}
+body header #mainHeader .container #infosHeader #painelConta .carrinho {
+  border-radius: 8px;
+  border: 1px solid #FAA500;
+  padding: 12px 14px 13px 17px;
+}
+body header .navbar {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+body header .navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+body header .navbar ul li {
+  width: 146px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .navbar ul li a {
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #353535;
+  text-decoration: none;
+}
+body header .navbar ul li a.novidades {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+body header .navbar ul li a.outlet {
+  text-transform: uppercase;
+}
+body header .navbar ul li a.active {
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FAA500;
+}
+body header .navbar ul li a:hover {
+  color: #FAA500;
+}
+body #carouselCaptions .carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #FAA500 !important;
+}
+body #carouselCaptions .carousel-indicators [data-bs-target].active {
+  background-color: #FAA500;
+}
+body #carouselCaptions .carousel-item {
+  height: 600px;
+}
+body #carouselCaptions .carousel-item .bannerMobile {
+  display: none;
+}
+body #carouselCaptions .carousel-item .bannerDesktop {
+  display: block;
+  width: 100%;
+}
+body #carouselCaptions .carousel-item .carousel-caption {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  gap: 30px;
+}
+body #carouselCaptions .carousel-item .carousel-caption h1 {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #carouselCaptions .carousel-item .carousel-caption p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 460px;
+}
+body #carouselCaptions .carousel-item .carousel-caption a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 48px;
+  padding: 14px 30px 14px 30px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #FAA500 !important;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #carouselCaptions .carousel-control-prev-icon {
+  background-image: url("../svg/prev.svg");
+}
+body #carouselCaptions .carousel-control-next-icon {
+  background-image: url("../svg/next.svg");
+}
+body #servicos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  align-items: center;
+}
+body #servicos h2 {
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #353535;
+}
+body #servicos .row {
+  justify-content: space-between;
+  max-width: 1320px;
+  width: 100%;
+}
+body #servicos .row .col-lg-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 260px;
+  height: 64px;
+  border-radius: 4px;
+  background: #EFEFEF;
+  gap: 15px;
+}
+body #servicos .row .col-lg-2 .titulo {
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+body #servicos .row .col-lg-2 .texto {
+  font-family: Titillium Web;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+body #parceiras {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0 50px;
+  align-items: center;
+}
+body #parceiras h2 {
+  font-family: Titillium Web;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #353535;
+}
+body #parceiras .row {
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+body #parceiras .row .col-lg-2 {
+  padding: 0;
+}
+body #parceiras .row .col-lg-2 img {
+  width: 100%;
+}
+body #vitrine {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0 50px;
+  align-items: center;
+}
+body #vitrine .vitrine.container {
+  max-width: 1320px;
+}
+body #vitrine .vitrine .vitrineHeader .vitrineTitle {
+  font-family: Titillium Web;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #353535;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: 32px;
+  font-size: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .slick-arrow.slick-next {
+  right: 0;
+  background-image: url("../svg/next.svg");
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .slick-arrow.slick-prev {
+  left: 0;
+  background-image: url("../svg/prev.svg");
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .slick-list {
+  padding: 0 !important;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .slick-track {
+  display: flex;
+  gap: 10px;
+  max-height: 600px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  width: 100% !important;
+  max-width: 308px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto img {
+  height: auto;
+  width: 100%;
+  max-height: 381px;
+  max-width: 308px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes {
+  margin: 10px 15px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores {
+  width: 27px;
+  height: 27px;
+  border-radius: 4px;
+  border: 1px;
+  cursor: pointer;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.bege {
+  background: #DEAC71;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.rose {
+  background: #D37164;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.azul {
+  background: #6497D3;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.violeta {
+  background: #3C3B79;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.preto {
+  background: #1C1A19;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.rose-escuro {
+  background: #D84E4B;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.bege-claro {
+  background: #CFC9B0;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.branco {
+  background: #EAE9E5;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores a {
+  font-size: 0;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.active {
+  border: 2px solid #353535;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao {
+  margin: 0px 15px 10px;
+  height: 135px;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .preco {
+  font-family: Titillium Web;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353535;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .nome h3 {
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .nome h3 a {
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .descricao p {
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .btn {
+  display: flex;
+  width: 90%;
+  height: 35px;
+  border-radius: 4px;
+  background: #FAA500;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+body #vitrine .vitrine .vitrineContent .listaProdutos .produto .btn a {
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+body #novaColecao.container {
+  max-width: 1320px;
+}
+body #novaColecao.container .colecao > .col-md {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+body #novaColecao.container .colecao > .col-md .titulo-colecao {
+  font-family: Titillium Web;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #novaColecao.container .colecao > .col-md .texto-colecao {
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body #newsletter {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+body #newsletter.container {
+  max-width: 1320px;
+}
+body #newsletter.container h2 {
+  font-family: Titillium Web;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 40%;
+}
+body #newsletter.container .newsletterInternal {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  max-width: 1320px;
+  max-height: 88px;
+  text-align: center;
+  align-items: center;
+}
+body #newsletter.container .newsletterInternal .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 60%;
+}
+body #newsletter.container .newsletterInternal .input-group .form-control {
+  background-color: #fff;
+  border-radius: 10px 0 0px 10px;
+  height: 40px;
+  border: 1px solid #353535;
+  max-width: 660px;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 50%;
+}
+body #newsletter.container .newsletterInternal .input-group .form-control:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+body #newsletter.container .newsletterInternal .input-group button {
+  background-color: #FAA500;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  width: 131px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  z-index: 8;
+  right: 10px;
+}
+body #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.698);
+  display: none;
+  z-index: 8;
+}
+body #overlay.active {
+  display: block !important;
+}
+body #popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0px;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 9;
+  text-align: center;
+  color: #787D83;
+}
+body #popup.active {
+  display: flex !important;
+}
+body #popup.active .popupAside {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  gap: 10px;
+}
+body #popup.active .popupAside h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+body #popup.active .popupAside p {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+body #popup.active .popupAside p b {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+body #popup.active .popupAside .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+body #popup.active .popupAside .input-group .form-control {
+  background-color: #fff;
+  border-radius: 10px;
+  height: 40px;
+  border: 1px solid #C4C4C4;
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 20px;
+  width: 322px;
+}
+body #popup.active .popupAside .input-group .form-control:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+body #popup.active .popupAside .input-group button {
+  background-color: #FAA500;
+  border-radius: 8px;
+  height: 40px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  color: #fff;
+  font-family: Titillium Web;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+body #closePopup {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+body footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px -5px 6px 0px rgba(0, 0, 0, 0.0784313725);
+}
+body footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+body footer .container .footerTop {
+  height: 291px;
+  display: flex;
+  align-items: center;
+  max-width: 1320px;
+  width: 100%;
+}
+body footer .container .footerTop .info.col-3, body footer .container .footerTop .account.col-3, body footer .container .footerTop .findUs.col-3 {
+  height: 187px;
+}
+body footer .container .footerTop p {
+  font-family: Titillium Web;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+body footer .container .footerTop ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body footer .container .footerTop ul li a {
+  font-family: Titillium Web;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+body footer .container .footerTop ul li a:hover {
+  color: #FAA500;
+}
+body footer .container .footerBottom {
+  height: 85px;
+  background-color: #353535;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body footer .container .footerBottom .internal {
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer .container .footerBottom .internal .redesSociais {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body footer .container .footerBottom .internal .redesSociais img {
+  height: 32px;
+}
+body footer .container .footerBottom .internal .redesSociais .youtubeFooter img {
+  height: 22px;
+}
+body footer .container .footerBottom .internal .meiosPagamento {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body footer .container .footerBottom .internal .desenvolvidoPor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 207px;
+}
+body footer .container .footerBottom .internal .desenvolvidoPor p {
+  font-family: Open Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #fff;
+}
+body footer .container .footerBottom .internal .desenvolvidoPor img {
+  height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  body header #superTopo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 24px;
+    background-color: #353535;
+    text-align: center;
+    align-items: center;
+  }
+  body header #superTopo p {
+    font-family: Titillium Web;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body header #headerMobile {
+    display: flex;
+    height: 88px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0784313725);
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header #headerMobile .navbar {
+    display: block;
+    width: -moz-max-content;
+    width: max-content;
+    background-color: transparent !important;
+  }
+  body header #headerMobile .navbar .container-fluid {
+    padding: 0;
+  }
+  body header #headerMobile .navbar .container-fluid button {
+    border: none;
+  }
+  body header #headerMobile .buscar, body header #headerMobile #painel {
+    width: 54px;
+    display: flex;
+    justify-content: center;
+  }
+  body header #headerMobile .buscar #buscaMobile {
+    width: 100%;
+    position: absolute;
+    top: 110px;
+    background-color: #fff;
+    left: 0;
+    z-index: 9;
+  }
+  body header #headerMobile .buscar #buscaMobile input {
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    width: 80%;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  body header #headerMobile .buscar #buscaMobile input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+  body header #headerMobile .buscar #buscaMobile button {
+    position: absolute;
+    background-color: #FAA500;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    width: 20%;
+    cursor: pointer;
+    color: #fff;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body header #mainHeader {
+    display: none;
+  }
+  body header #mainHeader .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.0784313725);
+  }
+  body header #mainHeader .container #infosHeader {
+    display: flex;
+    width: 100%;
+    max-width: 1320px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header #mainHeader .container #infosHeader .navbar-mobile {
+    display: block;
+  }
+  body header #mainHeader .container #infosHeader #logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  body header #mainHeader .container #infosHeader #busca {
+    justify-content: flex-end;
+    width: 40%;
+    max-width: 791px;
+    max-height: 88px;
+    text-align: center;
+    align-items: center;
+    display: none;
+  }
+  body header #mainHeader .container #infosHeader #busca input {
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    width: 791px;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  body header #mainHeader .container #infosHeader #busca input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
+  body header #mainHeader .container #infosHeader #busca button {
+    position: absolute;
+    background-color: #FAA500;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    width: 119px;
+    cursor: pointer;
+    color: #fff;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body header #mainHeader .container #infosHeader #painelConta {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    max-width: 422px;
+    height: 88px;
+    text-align: center;
+    align-items: center;
+  }
+  body header #mainHeader .container #infosHeader #painelConta .minhaConta, body header #mainHeader .container #infosHeader #painelConta .favoritos, body header #mainHeader .container #infosHeader #painelConta .carrinho {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    color: #353535;
+  }
+  body header #mainHeader .container #infosHeader #painelConta .minhaConta img, body header #mainHeader .container #infosHeader #painelConta .favoritos img, body header #mainHeader .container #infosHeader #painelConta .carrinho img {
+    max-height: 14px;
+  }
+  body header #mainHeader .container #infosHeader #painelConta .minhaConta:hover, body header #mainHeader .container #infosHeader #painelConta .favoritos:hover, body header #mainHeader .container #infosHeader #painelConta .carrinho:hover {
+    color: #FAA500;
+  }
+  body header #mainHeader .container #infosHeader #painelConta .carrinho {
+    border-radius: 8px;
+    border: 1px solid #FAA500;
+    padding: 12px 14px 13px 17px;
+  }
+  body header .navbar {
+    height: 48px;
+    display: none;
+    justify-content: center;
+  }
+  body header .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+  body header .navbar ul li {
+    width: 146px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header .navbar ul li a {
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #353535;
+    text-decoration: none;
+  }
+  body header .navbar ul li a.novidades {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  body header .navbar ul li a.outlet {
+    text-transform: uppercase;
+  }
+  body header .navbar ul li a.active {
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FAA500;
+  }
+  body header .navbar ul li a:hover {
+    color: #FAA500;
+  }
+  body #carouselCaptions .carousel-item {
+    height: 320px;
+  }
+  body #carouselCaptions .carousel-item .bannerDesktop {
+    display: none !important;
+  }
+  body #carouselCaptions .carousel-item .bannerMobile {
+    display: block !important;
+    width: 100%;
+  }
+  body #carouselCaptions .carousel-item .carousel-caption {
+    height: 320px;
+  }
+  body #carouselCaptions .carousel-item .carousel-caption h1 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.57px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 220px;
+  }
+  body #carouselCaptions .carousel-item .carousel-caption p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 239px;
+  }
+  body #carouselCaptions .carousel-item .carousel-caption a.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 28px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #FAA500 !important;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.07px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  body #servicos {
+    padding: 0 30px;
+  }
+  body #servicos h2 {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+  }
+  body #servicos .row .slick-list {
+    margin: 0 auto;
+    padding: 0 !important;
+    max-width: 360px;
+  }
+  body #servicos .row .slick-list .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  body #parceiras {
+    padding: 0 30px;
+  }
+  body #parceiras h2 {
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+  }
+  body #parceiras .row .slick-list {
+    margin: 0 auto;
+    padding: 0 !important;
+    max-width: 360px;
+  }
+  body #parceiras .row .slick-list .slick-slide {
+    display: flex;
+    justify-content: center;
+  }
+  body #parceiras .row .slick-list img {
+    width: 90%;
+    max-height: 64px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1294117647);
+  }
+  body #vitrine {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0 50px;
+    align-items: center;
+  }
+  body #vitrine h2 {
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  body #vitrine .vitrine .vitrineHeader .vitrineTitle {
+    font-family: Titillium Web;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #353535;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    padding: 0 !important;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .slick-list {
+    padding: 0 !important;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .slick-track {
+    display: flex;
+    max-height: 100%;
+    justify-content: center;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    max-width: unset;
+    width: unset;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto img {
+    height: 100%;
+    width: 100%;
+    max-height: -moz-max-content;
+    max-height: max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes {
+    margin: 10px 30px;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores {
+    width: 27px;
+    height: 27px;
+    border-radius: 4px;
+    border: 1px;
+    cursor: pointer;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.bege {
+    background: #DEAC71;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.rose {
+    background: #D37164;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.azul {
+    background: #6497D3;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.violeta {
+    background: #3C3B79;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.preto {
+    background: #1C1A19;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.rose-escuro {
+    background: #D84E4B;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.bege-claro {
+    background: #CFC9B0;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.branco {
+    background: #EAE9E5;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores a {
+    font-size: 0;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .foto .variacoes .opcoes .cores.active {
+    border: 2px solid #353535;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao {
+    margin: 0px 30px;
+    height: 135px;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .preco {
+    font-family: Titillium Web;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #353535;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .nome h3 {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .nome h3 a {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .produtoDescricao .descricao p {
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .btn {
+    display: flex;
+    width: 83%;
+    height: 35px;
+    margin: auto;
+    border-radius: 4px;
+    background: #FAA500;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+  }
+  body #vitrine .vitrine .vitrineContent .listaProdutos .produto .btn a {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+  }
+  body #novaColecao {
+    margin-bottom: 50px;
+    padding: 0 30px;
+  }
+  body #novaColecao .colecao {
+    gap: 30px;
+  }
+  body #novaColecao .colecao > .col-md {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body #novaColecao .colecao > .col-md .titulo-colecao {
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  body #novaColecao .colecao > .col-md .texto-colecao {
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  body #novaColecao .colecao .col-md img {
+    width: 100%;
+  }
+  body #newsletter {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    box-shadow: 0px -2px 2px 0px rgba(0, 0, 0, 0.0784313725);
+    max-width: unset !important;
+    padding: 0 30px;
+  }
+  body #newsletter .newsletterInternal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100% !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    text-align: center;
+    align-items: center;
+  }
+  body #newsletter .newsletterInternal h2 {
+    font-family: Titillium Web;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+  }
+  body #newsletter .newsletterInternal .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  body #newsletter .newsletterInternal .input-group .form-control {
+    background-color: #fff;
+    border-radius: 10px !important;
+    height: 26px;
+    border: 1px solid #353535;
+    max-width: unset;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 60% !important;
+  }
+  body #newsletter .newsletterInternal .input-group .form-control:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  body #newsletter .newsletterInternal .input-group button {
+    background-color: #FAA500;
+    border-radius: 10px !important;
+    height: 26px;
+    border: none;
+    width: 20% !important;
+    cursor: pointer;
+    color: #fff;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    right: unset !important;
+  }
+  body #popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 9;
+    text-align: center;
+    color: #787D83;
+  }
+  body #popup.active {
+    display: flex !important;
+  }
+  body #popup.active .popupAside {
+    height: 307px !important;
+    width: 100%;
+    max-width: 298px !important;
+  }
+  body #popup.active .popupAside h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body #popup.active .popupAside p {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body #popup.active .popupAside p b {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  body #popup.active .popupAside .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 238px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  body #popup.active .popupAside .input-group .form-control {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 40px;
+    border: 1px solid #C4C4C4;
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+  }
+  body #popup.active .popupAside .input-group .form-control:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  body #popup.active .popupAside .input-group button {
+    background-color: #FAA500;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: center;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+  body #popup.active .popupImagem {
+    display: none !important;
+  }
+  body footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -5px 6px 0px rgba(0, 0, 0, 0.0784313725);
+  }
+  body footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  body footer .container .footerTop {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: unset !important;
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+  body footer .container .footerTop .info.col-3, body footer .container .footerTop .account.col-3, body footer .container .footerTop .findUs.col-3 {
+    height: auto !important;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+  }
+  body footer .container .footerTop .info.col-3 ul, body footer .container .footerTop .account.col-3 ul, body footer .container .footerTop .findUs.col-3 ul {
+    margin: 0;
+    display: none;
+    width: 100%;
+    padding: 0;
+  }
+  body footer .container .footerTop .info.col-3 p, body footer .container .footerTop .account.col-3 p, body footer .container .footerTop .findUs.col-3 p {
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 0;
+    height: 30px;
+    padding: 0;
+  }
+  body footer .container .footerTop .info.col-3 p::after, body footer .container .footerTop .account.col-3 p::after, body footer .container .footerTop .findUs.col-3 p::after {
+    content: "+";
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+  }
+  body footer .container .footerTop .info.active p::after, body footer .container .footerTop .account.active p::after, body footer .container .footerTop .findUs.active p::after {
+    content: "-";
+  }
+  body footer .container .footerTop .info ul, body footer .container .footerTop .account ul, body footer .container .footerTop .findUs ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  body footer .container .footerTop .info ul li a, body footer .container .footerTop .account ul li a, body footer .container .footerTop .findUs ul li a {
+    font-family: Titillium Web;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  body footer .container .footerTop .info ul li a:hover, body footer .container .footerTop .account ul li a:hover, body footer .container .footerTop .findUs ul li a:hover {
+    color: #FAA500;
+  }
+  body footer .container .footerBottom {
+    height: 233px;
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  body footer .container .footerBottom .internal {
+    max-width: unset !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%;
+    flex-direction: column;
+  }
+  body footer .container .footerBottom .internal .redesSociais {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 298px;
+  }
+  body footer .container .footerBottom .internal .redesSociais img {
+    height: 32px;
+  }
+  body footer .container .footerBottom .internal .redesSociais .youtubeFooter img {
+    height: 22px;
+  }
+  body footer .container .footerBottom .internal .meiosPagamento {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 298px;
+  }
+  body footer .container .footerBottom .internal .desenvolvidoPor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    width: 298px;
+  }
+  body footer .container .footerBottom .internal .desenvolvidoPor p {
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #fff;
+  }
+  body footer .container .footerBottom .internal .desenvolvidoPor img {
+    height: 25px;
+  }
+}/*# sourceMappingURL=style.css.map */
